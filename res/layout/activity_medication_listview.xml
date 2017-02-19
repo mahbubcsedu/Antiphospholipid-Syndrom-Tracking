@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="6dip" >
+
+    <CheckBox
+        android:id="@+id/cbmed_taken"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:focusable="true"
+        android:focusableInTouchMode="false" />
+
+    <TextView
+        android:id="@+id/tvmed_nameinlist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/cbmed_taken"
+        android:layout_alignBottom="@+id/cbmed_taken"
+        android:layout_toRightOf="@+id/cbmed_taken"
+        android:text="TextView" 
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView1"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_marginLeft="48dp"
+        android:layout_toRightOf="@+id/textView1"
+        android:text="@string/tvmedlist_freqhit"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:visibility="invisible"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvmed_nameinlist"
+        android:layout_below="@+id/cbmed_taken"
+        android:layout_marginLeft="20dp"
+        android:text="@string/tvmedilist_dosagehint"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:visibility="invisible"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tvMedListDosage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView1"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_toRightOf="@+id/textView1"
+        android:paddingLeft="2dp"        
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:visibility="invisible"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tvMedListFreq"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView2"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_toRightOf="@+id/textView2"
+        android:paddingLeft="2dp"        
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:visibility="invisible"
+        android:textSize="12sp" />
+
+    
+
+</RelativeLayout>

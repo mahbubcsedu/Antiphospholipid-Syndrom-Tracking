@@ -1,0 +1,12 @@
+1. Time duration pickup pop-up title should be placed to string for modification any time later
+2. Make change to supplement as soon as medication finalized--done
+3. sharedpreference should be added to sync data
+4. Time duration select has space related problem--done
+5. If not selected any medication, do I need to show them any message?
+6. Hints to add new medication or supplement
+7. Autocomplete check for supplement--single name not appear--done
+8. Peakflow waiting for next --done
+9. Replace all hard coded string to resource string
+10. After delete using action menu, the list is not updating.
+11. Medication selection, No is not keeping selected--please check
+check the peak flow remain open if diary submitted

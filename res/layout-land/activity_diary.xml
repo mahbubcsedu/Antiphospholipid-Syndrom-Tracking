@@ -1,0 +1,1317 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".DiaryActivity" >
+
+    <ScrollView
+        android:id="@+id/DD_main_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/activity_horizontal_margin" >
+
+        <LinearLayout
+            android:id="@+id/diaryLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/activity_subhead" >
+
+                <TextView
+                    android:id="@+id/tvTodaysDateLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/BDD_TodaysDate"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/diarydate"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:gravity="right|center_vertical"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llpeakflow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/peak_flow_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/peak_flow_button" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llSymptomsTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tvHealth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/activity_subhead"
+                    android:text="@string/BDD_Health"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llSymtomsSummary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/tvSymptomsYesterday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/question_bottom_margin"
+                    android:text="@string/BDD_QST_SymptomsYesterday"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llwheezing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/question_left_margin"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/form_row_contrast" >
+
+                    <TextView
+                        android:id="@+id/tvSYWheezing"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/BDD_QCAT_wheezing"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <RadioGroup
+                        android:id="@+id/rgWheezing"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right|center_vertical"
+                        android:orientation="horizontal" >
+
+                        <RadioButton
+                            android:id="@+id/rbWheezing0"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="false"
+                            android:text="@string/quest_yes" />
+
+                        <RadioButton
+                            android:id="@+id/rbWheezing1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="false"
+                            android:text="@string/quest_no" />
+                    </RadioGroup>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llSYCouphing"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/tvSYCoughing"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/BDD_QCAT_Coughing"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <RadioGroup
+                        android:id="@+id/rgCoughing"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right|center_vertical"
+                        android:orientation="horizontal" >
+
+                        <RadioButton
+                            android:id="@+id/rbCoughing0"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="false"
+                            android:text="@string/quest_yes" />
+
+                        <RadioButton
+                            android:id="@+id/rbCoughing1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="false"
+                            android:text="@string/quest_no" />
+                    </RadioGroup>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llSYShortBreath"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/form_row_contrast"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tvSYShortBreath"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/BDD_QCAT_ShortnessOfBreath"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <RadioGroup
+                        android:id="@+id/rgShortBreath"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right|center_vertical"
+                        android:orientation="horizontal" >
+
+                        <RadioButton
+                            android:id="@+id/rbShortBreath0"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="false"
+                            android:text="@string/quest_yes" />
+
+                        <RadioButton
+                            android:id="@+id/rbShortBreath1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="false"
+                            android:text="@string/quest_no" />
+                    </RadioGroup>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llSYChestTightness"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/tvSYChestTightness"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/BDD_QCAT_ChestTightness"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <RadioGroup
+                        android:id="@+id/rgChestTightness"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right|center_vertical"
+                        android:orientation="horizontal" >
+
+                        <RadioButton
+                            android:id="@+id/rbChestTightness0"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="false"
+                            android:text="@string/quest_yes" />
+
+                        <RadioButton
+                            android:id="@+id/rbChestTightness1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="false"
+                            android:text="@string/quest_no" />
+                    </RadioGroup>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llSYChestPain"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/form_row_contrast" >
+
+                    <TextView
+                        android:id="@+id/tvSYChestPain"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/BDD_QCAT_ChestPain"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <RadioGroup
+                        android:id="@+id/rgChestPain"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right|center_vertical"
+                        android:orientation="horizontal" >
+
+                        <RadioButton
+                            android:id="@+id/rbChestPain0"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="false"
+                            android:text="@string/quest_yes" />
+
+                        <RadioButton
+                            android:id="@+id/rbChestPain1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="false"
+                            android:text="@string/quest_no" />
+                    </RadioGroup>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llSYFever"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/tvSYFever"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/BDD_QCAT_Fever"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <RadioGroup
+                        android:id="@+id/rgFever"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right|center_vertical"
+                        android:orientation="horizontal" >
+
+                        <RadioButton
+                            android:id="@+id/rbFever0"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="false"
+                            android:text="@string/quest_yes" />
+
+                        <RadioButton
+                            android:id="@+id/rbFever1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="false"
+                            android:text="@string/quest_no" />
+                    </RadioGroup>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llSVNauseaVomitting"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/form_row_contrast" >
+
+                    <TextView
+                        android:id="@+id/tvSVNauseaVomiting"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/BDD_QCAT_Nausea"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <RadioGroup
+                        android:id="@+id/rgNauseaVomiting"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right|center_vertical"
+                        android:orientation="horizontal" >
+
+                        <RadioButton
+                            android:id="@+id/rbNauseaVomiting0"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="false"
+                            android:text="@string/quest_yes" />
+
+                        <RadioButton
+                            android:id="@+id/rbNauseaVomiting1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="false"
+                            android:text="@string/quest_no" />
+                    </RadioGroup>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llRunnyNose"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/tvSVRunnyNose"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/BDD_QCAT_RunnyNose"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <RadioGroup
+                        android:id="@+id/rgRunnyNose"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right|center_vertical"
+                        android:orientation="horizontal" >
+
+                        <RadioButton
+                            android:id="@+id/rbRunnyNose0"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="false"
+                            android:text="@string/quest_yes" />
+
+                        <RadioButton
+                            android:id="@+id/rbRunnyNose1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="false"
+                            android:text="@string/quest_no" />
+                    </RadioGroup>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llSVOther"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/form_row_contrast" >
+
+                    <TextView
+                        android:id="@+id/tvSVOther"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/BDD_QCAT_Other"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <RadioGroup
+                        android:id="@+id/rgOther"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right|center_vertical"
+                        android:orientation="horizontal" >
+
+                        <RadioButton
+                            android:id="@+id/rbOther0"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="false"
+                            android:text="@string/quest_yes" />
+
+                        <RadioButton
+                            android:id="@+id/rbOther1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="false"
+                            android:text="@string/quest_no" />
+                    </RadioGroup>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llEtOther"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/form_row_contrast"
+                    android:visibility="gone" >
+
+                    <EditText
+                        android:id="@+id/etOther"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:inputType="textAutoCorrect" >
+                    </EditText>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llSYMissSchoolWork"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp" >
+
+                <TextView
+                    android:id="@+id/tvSYMissSchoolWork"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:text="@string/BDD_QST_MissSchoolWork"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <RadioGroup
+                    android:id="@+id/rgMissSchoolWork"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="left|center_vertical"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/rbMissSchoolWork0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:text="@string/quest_yes" />
+
+                    <RadioButton
+                        android:id="@+id/rbMissSchoolWork1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:text="@string/quest_no" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llSYMedication"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@color/form_row_contrast" >
+
+                <TextView
+                    android:id="@+id/tvSYMedication"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:text="@string/BDD_QST_Medication"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <RadioGroup
+                    android:id="@+id/rgMedication"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="left|center_vertical"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/rbMedication0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:text="@string/quest_yes" />
+
+                    <RadioButton
+                        android:id="@+id/rbMedication1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:text="@string/quest_no" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llSYMedicationBack"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@color/form_row_contrast" >
+
+                <TextView
+                    android:id="@+id/tvSYMedicationBack"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:text="@string/BDD_QST_Medication_back"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <Button
+                    android:id="@+id/btnMedicationBack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right" 
+                    android:text="@string/title_medication_backpressed"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <GridView
+                    android:id="@+id/grdInfoMedication"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:numColumns="3"
+                    android:visibility="gone" >
+                </GridView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llSYOTC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp" >
+
+                <TextView
+                    android:id="@+id/tvSYOTC"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:text="@string/BDD_QST_OTC"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <RadioGroup
+                    android:id="@+id/rgOTC"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="left|center_vertical"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/rbOTC0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:text="@string/quest_yes" />
+
+                    <RadioButton
+                        android:id="@+id/rbOTC1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:text="@string/quest_no" />
+                </RadioGroup>
+            </LinearLayout>
+<LinearLayout
+                android:id="@+id/llSYOTCBack"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+               
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/tvSYOTCBack"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:text="@string/BDD_QST_Medication_back"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <Button
+                    android:id="@+id/btnSYOTCBack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="@string/title_supplement_goingback" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <GridView
+                    android:id="@+id/grdInfoOTC"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:numColumns="3"
+                    android:visibility="gone" >
+                </GridView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llDailyActivitiesTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tvDailyActivities"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/activity_subhead"
+                    android:text="@string/BDD_DailyActivities"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <!--
+            <LinearLayout
+                android:id="@+id/llSYTimeSlept2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/form_row_contrast" >
+
+                <TextView
+                    android:id="@+id/tvSYTimeSlept2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:text="@string/BDD_QST_TimeSlept"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/lbTimeSlept"
+                    style="@android:style/Widget.DeviceDefault.Light.Spinner"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+            </LinearLayout>
+            -->
+
+            <LinearLayout
+                android:id="@+id/llSYTimeSlept"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@color/form_row_contrast" >
+
+                <TextView
+                    android:id="@+id/tvSYTimeSlept"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:text="@string/BDD_QST_TimeSlept"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/tvPickTimeSlept"
+                    style="@android:style/Widget.DeviceDefault.Light.Spinner"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <!--
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/lbTimeSleptHours"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/BDD_QOP_Prmpt_Hours"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <Spinner
+                        android:id="@+id/spTimeSleptHours"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/BDD_QOP_Prmpt_Hours"
+                        android:entries="@array/BDD_QOP_Hours"
+                        android:gravity="right"
+                        android:prompt="@string/BDD_QOP_Prmpt_Hours"
+                        tools:listitem="@android:layout/simple_spinner_dropdown_item" />
+
+                    <TextView
+                        android:id="@+id/lbTimeSleptMinutes"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/BDD_QOP_Prmpt_Minutes"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <Spinner
+                        android:id="@+id/spTimeSleptMinutes"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/BDD_QOP_Prmpt_Minutes"
+                        android:entries="@array/BDD_QOP_Min"
+                        android:gravity="right"
+                        android:prompt="@string/BDD_QOP_Prmpt_Minutes" />
+                </LinearLayout>
+                -->
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llSYBreathingCaoughingMidnight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp" >
+
+                <TextView
+                    android:id="@+id/tvSYBreathingCoughingMidNight"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:text="@string/BDD_QST_BreathingCoughingMidNight"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <RadioGroup
+                    android:id="@+id/rgBreathingCoughingMidNight"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="left|center_vertical"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/rbBreathingCoughingMidNight0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:text="@string/quest_yes" />
+
+                    <RadioButton
+                        android:id="@+id/rbBreathingCoughingMidNight1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:text="@string/quest_no" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llSYTimeWokeUp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@color/form_row_contrast" >
+
+                <TextView
+                    android:id="@+id/tvSYTimesWokeUp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:text="@string/BDD_QST_TimesWokeUp"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <Spinner
+                    android:id="@+id/spTimesWokeUp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:entries="@array/BDD_QOP_TimesWake"
+                    android:gravity="right"
+                    tools:listitem="@android:layout/simple_spinner_dropdown_item" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llSYTimeSitting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp" >
+
+                <TextView
+                    android:id="@+id/tvSYTimeSitting"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:text="@string/BDD_QST_TimeSitting"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/tvPickTimeSitting"
+                    style="@android:style/Widget.DeviceDefault.Light.Spinner"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+                <!--
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/lbPeakFlow3"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/BDD_QOP_Prmpt_Hours"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <Spinner
+                        android:id="@+id/spTimeSittingHours"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/BDD_QOP_Prmpt_Hours"
+                        android:entries="@array/BDD_QOP_Hours"
+                        android:gravity="right"
+                        android:prompt="@string/BDD_QOP_Prmpt_Hours"
+                        tools:listitem="@android:layout/simple_spinner_dropdown_item" />
+
+                    <TextView
+                        android:id="@+id/lbTimeSittingMinutes"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/BDD_QOP_Prmpt_Minutes"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <Spinner
+                        android:id="@+id/spTimeSittingMinutes"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/BDD_QOP_Prmpt_Minutes"
+                        android:entries="@array/BDD_QOP_Min"
+                        android:gravity="right"
+                        android:prompt="@string/BDD_QOP_Prmpt_Minutes" />
+                </LinearLayout>
+                -->
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llSYExercise"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@color/form_row_contrast" >
+
+                <TextView
+                    android:id="@+id/tvSYExercise"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:text="@string/BDD_QST_Exercise"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <RadioGroup
+                    android:id="@+id/rgExercise"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="left|center_vertical"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/rbExercise0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:text="@string/quest_yes" />
+
+                    <RadioButton
+                        android:id="@+id/rbExercise1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:text="@string/quest_no" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llSYExerciseIndoor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:paddingLeft="5dp"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/tvSYExerciseIndoors"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:text="@string/BDD_QCAT_ExerciseIndoors"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <Spinner
+                    android:id="@+id/spExerciseIndoors"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:entries="@array/BDD_QOP_MinutesRange"
+                    android:gravity="right"
+                    tools:listitem="@android:layout/simple_spinner_dropdown_item" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llExerciseOutdoors"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/form_row_contrast"
+                android:paddingLeft="5dp"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/tvSYExerciseOutdoors"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:text="@string/BDD_QCAT_ExerciseOutdoors"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <Spinner
+                    android:id="@+id/spExerciseOutdoors"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:entries="@array/BDD_QOP_MinutesRange"
+                    android:gravity="right"
+                    tools:listitem="@android:layout/simple_spinner_dropdown_item" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llSYTimeSpent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/tvTimeSpent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/question_bottom_margin"
+                    android:text=""
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llSYTimeSpentOutdoor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp" >
+
+                <TextView
+                    android:id="@+id/tvSYOutdoors"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:text="@string/BDD_QST_TimeSpent"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/tvPickOutdoorsTimeSpent"
+                    style="@android:style/Widget.DeviceDefault.Light.Spinner"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+                <!--
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/lbOutdoorsHours"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/BDD_QOP_Prmpt_Hours"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <Spinner
+                        android:id="@+id/spOutdoorsHours"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/BDD_QOP_Prmpt_Hours"
+                        android:entries="@array/BDD_QOP_Hours"
+                        android:gravity="right"
+                        android:prompt="@string/BDD_QOP_Prmpt_Hours"
+                        tools:listitem="@android:layout/simple_spinner_dropdown_item" />
+
+                    <TextView
+                        android:id="@+id/lbOutdoorsMinutes"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/BDD_QOP_Prmpt_Minutes"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <Spinner
+                        android:id="@+id/spOutdoorsMinutes"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/BDD_QOP_Prmpt_Minutes"
+                        android:entries="@array/BDD_QOP_Min"
+                        android:gravity="right"
+                        android:prompt="@string/BDD_QOP_Prmpt_Minutes" />
+                </LinearLayout>
+                -->
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llSYVehicle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@color/form_row_contrast" >
+
+                <TextView
+                    android:id="@+id/tvSYVehicle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:text="@string/BDD_QCAT_Vehicle"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/tvPickDurationVehicle"
+                    style="@android:style/Widget.DeviceDefault.Light.Spinner"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+                <!--
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/lbVehicleHours"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/BDD_QOP_Prmpt_Hours"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <Spinner
+                        android:id="@+id/spVehicleHours"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/BDD_QOP_Prmpt_Hours"
+                        android:entries="@array/BDD_QOP_Hours"
+                        android:gravity="right"
+                        android:prompt="@string/BDD_QOP_Prmpt_Hours"
+                        tools:listitem="@android:layout/simple_spinner_dropdown_item" />
+
+                    <TextView
+                        android:id="@+id/lbVehicleMinutes"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/BDD_QOP_Prmpt_Minutes"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <Spinner
+                        android:id="@+id/spVehicleMinutes"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/BDD_QOP_Prmpt_Minutes"
+                        android:entries="@array/BDD_QOP_Min"
+                        android:gravity="right"
+                        android:prompt="@string/BDD_QOP_Prmpt_Minutes" />
+                </LinearLayout>
+                -->
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llSYSmoke"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp" >
+
+                <TextView
+                    android:id="@+id/tvSYSmoke"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:text="@string/BDD_QST_Smoke"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <RadioGroup
+                    android:id="@+id/rgSmoke"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="left|center_vertical"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/rbSmoke0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:text="@string/quest_yes" />
+
+                    <RadioButton
+                        android:id="@+id/rbSmoke1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:text="@string/quest_no" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llSYNumberOfSmoke"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/question_left_margin"
+                android:layout_marginTop="5dp"
+                android:paddingLeft="5dp"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/tvSYNumberSmoked"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:text="@string/BDD_QCAT_NumberSmoked"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <Spinner
+                    android:id="@+id/spNumberSmoked"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:entries="@array/BDD_QOP_NumCigs"
+                    android:gravity="right|center_vertical"
+                    tools:listitem="@android:layout/simple_spinner_dropdown_item" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llSYPeopleSmoking"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@color/form_row_contrast" >
+
+                <TextView
+                    android:id="@+id/tvSYPeopleSmoking"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:text="@string/BDD_QST_PeopleSmoking"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <RadioGroup
+                    android:id="@+id/rgPeopleSmoking"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="left|center_vertical"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/rbPeopleSmoking0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:text="@string/quest_yes" />
+
+                    <RadioButton
+                        android:id="@+id/rbPeopleSmoking1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:text="@string/quest_no" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llSYDrinkCaffein"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp" >
+
+                <TextView
+                    android:id="@+id/tvSYDrinkCaffein"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:text="@string/BDD_QST_DrinkCaffein"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <RadioGroup
+                    android:id="@+id/rgDrinkCaffein"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="left|center_vertical"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/rbDrinkCaffein0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:text="@string/quest_yes" />
+
+                    <RadioButton
+                        android:id="@+id/rbDrinkCaffein1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:text="@string/quest_no" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llSYDailyStress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@color/form_row_contrast" >
+
+                <TextView
+                    android:id="@+id/tvSYDailyStress"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:text="@string/BDD_QST_DailyStress"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <RadioGroup
+                    android:id="@+id/rgDailyStress"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="left|center_vertical"
+                    android:orientation="vertical" >
+
+                    <RadioButton
+                        android:id="@+id/rbDailyStress0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:text="@string/BDD_QST_Stress1" />
+
+                    <RadioButton
+                        android:id="@+id/rbDailyStress1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:text="@string/BDD_QST_Stress2" />
+
+                    <RadioButton
+                        android:id="@+id/rbDailyStress2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:text="@string/BDD_QST_Stress3" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llSYNitricOxide"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@color/form_row_contrast" >
+
+                <TextView
+                    android:id="@+id/tvNitricOxide"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:text="@string/BDD_QST_NitricOxide"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <EditText
+                    android:id="@+id/etNitricOxide"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="number" >
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lldiaryComplete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/btnSubmitDiary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/submit_diary_button_text" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,11 @@
+android.preference
+com.emmes.aps
+com.emmes.aps.dao
+com.emmes.aps.data
+com.emmes.aps.locationtracking
+com.emmes.aps.medication
+com.emmes.aps.supplement
+com.emmes.aps.sync
+com.emmes.aps.test
+com.emmes.aps.util
+com.google.android.gms

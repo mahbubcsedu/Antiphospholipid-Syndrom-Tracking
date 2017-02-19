@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/medicationdetailview"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <TextView
+        android:id="@+id/tvmedlabel_medname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="62dp"
+        android:text="@string/lblmedmedicationname" />
+
+    <AutoCompleteTextView
+        android:id="@+id/actvmed_medicationname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tvmedlabel_medname"
+        android:layout_alignBottom="@+id/tvmedlabel_medname"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/tvmedlabel_medname"
+        android:ems="10"
+        android:labelFor="@id/actvmed_medicationname" />
+
+    <TextView
+        android:id="@+id/tvmedlabel_dosage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvmedlabel_medname"
+        android:layout_below="@+id/tvmedlabel_medname"
+        android:layout_marginTop="30dp"
+        android:text="@string/lblmedDosage" />
+
+    <TextView
+        android:id="@+id/tvmedlabel_freq"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvmedlabel_dosage"
+        android:layout_below="@+id/tvmedlabel_dosage"
+        android:layout_marginTop="34dp"
+        android:text="@string/lblmedfreq" />
+
+    <AutoCompleteTextView
+        android:id="@+id/actvmed_dosage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tvmedlabel_dosage"
+        android:layout_alignBottom="@+id/tvmedlabel_dosage"
+        android:layout_alignLeft="@+id/actvmed_medicationname"
+        android:ems="10"
+        android:labelFor="@id/actvmed_dosage" >
+    </AutoCompleteTextView>
+
+    <EditText
+        android:id="@+id/edtmed_freq"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tvmedlabel_freq"
+        android:layout_alignBottom="@+id/tvmedlabel_freq"
+        android:layout_alignLeft="@+id/actvmed_dosage"
+        android:ems="10"
+        android:hint="how many times"
+        android:labelFor="@id/edtmed_freq" />
+
+    <Button
+        android:id="@+id/btnmed_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/edtmed_freq"
+        android:layout_below="@+id/edtmed_freq"
+        android:layout_marginRight="19dp"
+        android:layout_marginTop="105dp"
+        android:text="@string/btnmed_title" />
+
+</RelativeLayout>

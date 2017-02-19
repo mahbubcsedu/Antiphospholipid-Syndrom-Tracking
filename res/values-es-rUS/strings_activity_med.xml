@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="title_activity_medication">Medicación</string>
+    <string name="title_med_list">Medicamentos</string>
+    <string name="title_med_detail">Detalles de la medicación</string>
+    <string name="quest_med_taken">Compruebe si se toma ninguna ayer</string>
+    <string name="label_med_name">Nombre del medicamento</string>
+    <string name="label_med_dose">Dosis de Medicamentos</string>
+    <string name="label_med_freq">Medicación Frecuencia</string>
+    
+</resources>

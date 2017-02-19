@@ -1,0 +1,12 @@
+<resources>
+
+    <string name="title_activity_security_questions">Security Questions</string>
+
+    <!-- Strings related to login -->
+    <string name="error_incorrect_response">Response is incorrect</string>
+    <string name="prompt_question1">Security Question 1</string>
+    <string name="prompt_question2">Security Question 2</string>
+    <string name="action_forgot_response">Forgot Responses</string>
+    <string name="response_term">Answer</string>
+
+</resources>

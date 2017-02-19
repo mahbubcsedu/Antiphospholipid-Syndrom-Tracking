@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="PeakFlow">Please enter your peak flow measurements </string>
+	<string name="PeakFlow1">1. </string>
+	<string name="PeakFlow2">2. </string>
+	<string name="PeakFlow3">3. </string>
+	<string name="peak_flow_continue">Continue</string>
+</resources>

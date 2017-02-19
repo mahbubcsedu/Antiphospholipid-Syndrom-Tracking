@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="action_settings">Configuración</string>
+    <string name="reminder_content">Por favor completar su agenda!</string>
+    <string name="reminder_ticker">Alerta diario!</string>
+    <string name="quest_no">No</string>
+    <string name="quest_yes">Sí</string>
+    <string name="hello_world">Over The Counter</string>
+    <string name="title_activity_over_the_counter">OverTheCounter</string>
+    <string name="title_activity_peak_flow">PeakFlowActivity</string>
+</resources>

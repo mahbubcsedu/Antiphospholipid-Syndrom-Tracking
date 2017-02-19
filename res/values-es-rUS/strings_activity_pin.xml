@@ -1,0 +1,14 @@
+<resources>
+
+    <string name="title_activity_pin">Registrarse</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_password">PIN</string>
+    <string name="action_sign_in_short">Registrarse</string>
+    <string name="action_forgot_password">Olvid PIN</string>
+    <string name="login_progress_signing_in">Iniciando sesin&#8230;</string>
+    <string name="error_invalid_password">Este PIN es demasiado corto</string>
+    <string name="error_incorrect_password">Este PIN es incorrecto</string>
+    <string name="error_field_required">Este campo es obligatorio</string>
+
+</resources>

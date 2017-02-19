@@ -1,0 +1,100 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${packageName}.${activityClass}" >
+
+    <TextView
+        android:id="@+id/peakFlow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="58dp"
+        android:layout_marginTop="46dp"
+        android:text="@string/PeakFlow"
+        android:textSize="@dimen/activity_subhead" />
+
+    <TextView
+        android:id="@+id/peakFlow01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/peakFlow"
+        android:layout_below="@+id/peakFlow"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/PeakFlow1" />
+    
+     <TextView
+         android:id="@+id/peakFlow03"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignLeft="@+id/peakFlow01"
+         android:layout_below="@+id/peakFlow02"
+         android:layout_marginTop="35dp"
+         android:text="@string/PeakFlow3" />
+
+    <TextView
+        android:id="@+id/peakFlow02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/peakFlow01"
+        android:layout_below="@+id/peakFlow01"
+        android:layout_marginTop="35dp"
+        android:text="@string/PeakFlow2" />
+
+    <EditText
+        android:id="@+id/etPeakFlow01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/peakFlow01"
+        android:layout_alignBottom="@+id/peakFlow01"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@+id/peakFlow01"
+        android:ems="10"
+        android:inputType="number" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/etPeakFlow02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/peakFlow02"
+        android:layout_alignBottom="@+id/peakFlow02"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@+id/peakFlow02"
+        android:ems="10"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/etPeakFlow03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/peakFlow03"
+        android:layout_alignBottom="@+id/peakFlow03"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@+id/peakFlow03"
+        android:ems="10"
+        android:inputType="number" />
+<Button
+        android:id="@+id/btnPfAdd1"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/peakFlow01"
+        android:layout_alignRight="@+id/etPeakFlow01"
+        android:text="Add1" />
+    <Button
+        android:id="@+id/btnPfAdd2"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/etPeakFlow02"
+        android:layout_alignRight="@+id/etPeakFlow02"
+        android:text="Add2" />
+
+    
+
+</RelativeLayout>

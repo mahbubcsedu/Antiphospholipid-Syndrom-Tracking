@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent" 
+  android:id="@+id/TheSplashLayout"
+  android:layout_gravity="center"
+  android:gravity="center_horizontal|center_vertical"
+  android:background="#C99DC4" >
+    <ImageView 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content"         
+        android:id="@+id/SplashImageView"
+        android:layout_gravity="center"     
+        android:contentDescription="@string/desc_splash"   
+        android:src="@drawable/welcome2"        
+        >
+    </ImageView>
+</LinearLayout>

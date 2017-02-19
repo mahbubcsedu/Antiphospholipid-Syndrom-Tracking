@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="term_diary">Diario</string>
+    <string name="term_diarydate">Fecha del diario</string>
+    <string name="title_activity_diary">La agenda de Diario</string>
+    <string name="BDD_TodaysDate">Fecha de hoy (MM/DD/YYYY)</string>
+    <string name="BDD_Health">Salud</string>
+    <string name="BDD_QST_SymptomsYesterday">¿Sabía usted experimenta alguno de los siguientes síntomas de ayer?</string>
+    <string name="BDD_QCAT_wheezing">Las sibilancias</string>
+    <string name="BDD_QCAT_Coughing">Tos</string>
+    <string name="BDD_QCAT_ShortnessOfBreath">Falta de aliento</string>
+    <string name="BDD_QCAT_ChestTightness">Opresión en el pecho</string>
+    <string name="BDD_QCAT_ChestPain">Dolor en el pecho</string>
+    <string name="BDD_QCAT_Fever">Fiebre</string>
+    <string name="BDD_QCAT_Nausea">Náuseas o vómitos</string>
+    <string name="BDD_QCAT_RunnyNose">Nariz que moquea</string>
+    <string name="BDD_QST_MissSchoolWork">¿Se ha perdido la escuela, el trabajo o las actividades diarias normales debido a su enfermedad o síntomas?</string>
+    <string name="BDD_QCAT_Other">Otro problema que desea hablarnos?</string>
+    <string name="BDD_QST_Medication">¿Tomó algún medicamento de venta con receta de ayer?</string>
+    <string name="BDD_QST_OTC">¿Tomó alguna medicamentos de venta libre o suplementos de ayer?</string>
+    <string name="BDD_DailyActivities">Actividades Diarias</string>
+    <string name="BDD_QST_TimeSlept">Por favor, indique el número de horas y minutos que dormiste anoche.</string>
+    <string name="BDD_QOP_Hours00">0</string>
+    <string name="BDD_QOP_Hours01">1</string>
+    <string name="BDD_QOP_Hours02">2</string>
+    <string name="BDD_QOP_Hours03">3</string>
+    <string name="BDD_QOP_Hours04">4</string>
+    <string name="BDD_QOP_Hours05">5</string>
+    <string name="BDD_QOP_Hours06">6</string>
+    <string name="BDD_QOP_Hours07">7</string>
+    <string name="BDD_QOP_Hours08">8</string>
+    <string name="BDD_QOP_Hours09">9</string>
+    <string name="BDD_QOP_Hours10">10</string>
+    <string name="BDD_QOP_Hours10P">10+</string>
+    <string name="BDD_QOP_Prmpt_Hours">(horas)</string>
+
+    <string-array name="BDD_QOP_Hours">
+        <item></item>
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>10+</item>
+    </string-array>
+
+    <string name="BDD_QOP_Prmpt_Minutes">(acta)</string>
+    <string name="BDD_QOP_Min00">0</string>
+    <string name="BDD_QOP_Min15">15</string>
+    <string name="BDD_QOP_Min30">30</string>
+    <string name="BDD_QOP_Min45">45</string>
+
+    <string-array name="BDD_QOP_Min">
+        <item></item>
+        <item>0</item>
+        <item>15</item>
+        <item>30</item>
+        <item>45</item>
+    </string-array>
+
+    <string name="BDD_QST_BreathingCoughingMidNight">¿Te despiertas por la dificultad para respirar o toser en el medio de la noche?</string>
+    <string name="BDD_QST_TimesWokeUp">En caso afirmativo, indique el número de veces que se despertó:</string>
+    <string name="BDD_QOP_TimesWake0">0</string>
+    <string name="BDD_QOP_TimesWake1">1</string>
+    <string name="BDD_QOP_TimesWake2">2</string>
+    <string name="BDD_QOP_TimesWake3">3</string>
+    <string name="BDD_QOP_TimesWake4">4</string>
+    <string name="BDD_QOP_TimesWakeM">más</string>
+
+    <string-array name="BDD_QOP_TimesWake">
+        <item></item>
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>más</item>
+    </string-array>
+
+    <string name="BDD_QST_TimeSitting">Por favor estime el número de horas y minutos que se pasa sentado ayer.</string>
+    <string name="BDD_QST_Exercise">¿Sabía usted ejercita ayer?</string>
+    <string name="BDD_QOP_MinutesRange0">0</string>
+    <string name="BDD_QOP_MinutesRangelt30">&lt;30</string>
+    <string name="BDD_QOP_MinutesRange30to45">30&#8211;45</string>
+    <string name="BDD_QOP_MinutesRange46to60">46&#8211;60</string>
+    <string name="BDD_QOP_MinutesRangegt60">&gt;60</string>
+
+    <string-array name="BDD_QOP_MinutesRange">
+        <item></item>
+        <item>0</item>
+        <item>&lt;30</item>
+        <item>30&#8211;45</item>
+        <item>46&#8211;60</item>
+        <item>&gt;60</item>
+    </string-array>
+
+    <string name="BDD_QCAT_ExerciseIndoors">Si es sí, escriba el número de minutos que pasó ejercicio adentro.</string>
+    <string name="BDD_QCAT_ExerciseOutdoors">Si es sí, escriba el número de minutos que pasó ejercicio al aire libre.</string>
+    <string name="BDD_QST_TimeSpent">Por favor estime el número de horas y minutos que pasó:</string>
+    <string name="BDD_QCAT_Outdoors">al aire libre</string>
+    <string name="BDD_QCAT_Vehicle">En un vehículo u otro medio de transporte (desplazamientos, por ejemplo)</string>
+    <string name="BDD_QST_Smoke">¿Fumó usted ayer?</string>
+    <string name="BDD_QCAT_NumberSmoked">En caso afirmativo, indique el número de cigarrillos fumados</string>
+    <string name="BDD_QOP_NumCig1">1</string>
+    <string name="BDD_QOP_NumCig2">2</string>
+    <string name="BDD_QOP_NumCig3">3</string>
+    <string name="BDD_QOP_NumCig4">4</string>
+    <string name="BDD_QOP_NumCig5">5</string>
+    <string name="BDD_QOP_NumCig10">10</string>
+    <string name="BDD_QOP_NumCig20">20</string>
+    <string name="BDD_QOP_NumCiggt20">&gt;20</string>
+
+    <string-array name="BDD_QOP_NumCigs">
+        <item></item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>10</item>
+        <item>20</item>
+        <item>&gt;20</item>
+    </string-array>
+
+    <string name="BDD_QST_AroundSmoking">¿Fue alrededor de la gente, mientras que ayer estaban fumando?</string>
+    <string name="BDD_QST_DrinkCaffein">¿Tomó alguna bebida con cafeína ayer (colas, café, té, bebidas energéticas, etc)?</string>
+    <string name="BDD_QST_DailyStress">¿Cuál era su nivel de estrés diario?</string>
+    <string name="BDD_QST_Stress1">No estresante </string>
+    <string name="BDD_QST_Stress2">Un poco estresante </string>
+    <string name="BDD_QST_Stress3">Muy estresante</string>
+    <string name="BDD_QST_PeakFlow">Por favor ingrese sus medidas de flujo máximo 3: </string>
+    <string name="BDD_QST_PeakFlow1">1. </string>
+    <string name="BDD_QST_PeakFlow2">2. </string>
+    <string name="BDD_QST_PeakFlow3">3. </string>
+    <string name="BDD_QST_NitricOxide">Introduzca su dirección de medición del óxido nítrico:</string>
+
+</resources>

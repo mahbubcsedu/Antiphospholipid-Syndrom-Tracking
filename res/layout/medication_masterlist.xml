@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <Button
+        android:id="@+id/btnmed_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="18dp"
+        android:focusableInTouchMode="false"
+        android:paddingBottom="30dp"
+        android:text="@string/btnmed_add" />
+
+    <Button
+        android:id="@+id/btnmed_medSend"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="20dp"
+        android:layout_toLeftOf="@+id/btnmed_add"
+        android:focusableInTouchMode="false"
+        android:paddingBottom="30dp"
+        android:text="@string/btn_med_send" />
+
+        <LinearLayout
+            android:id="@+id/llmedlist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingLeft="25dp"
+            android:paddingTop="25dp" >
+            <include layout="@layout/listheader" />
+
+            <ListView
+                android:id="@+id/lvmed_madilist"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:divider="@drawable/divider"
+                android:dividerHeight="2dp"
+                android:footerDividersEnabled="true"
+                android:headerDividersEnabled="true"
+                android:textFilterEnabled="true" >
+
+            </ListView>
+
+        </LinearLayout>
+
+</RelativeLayout>

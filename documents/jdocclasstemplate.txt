@@ -1,0 +1,34 @@
+/**
+       * Explain something about this class, its return value or the procedure or algorithm it follows.
+       *
+       * <p>The methods of this class all throw a <tt>NullPointerException</tt>
+       * if the collections or class objects provided to them are null.
+       *
+       * <p>The documentation for the polymorphic algorithms contained in this class
+       * generally includes a brief description of the <i>implementation</i>.  Such
+       * descriptions should be regarded as <i>implementation notes</i>, rather than
+       * parts of the <i>specification</i>.  Implementors should feel free to
+       * substitute other algorithms, so long as the specification itself is adhered
+       * to.  (For example, the algorithm used by <tt>sort</tt> does not have to be
+       * a merge-sort, but it does have to be <i>stable</i>.)
+       *
+       * <p>The "destructive" algorithms contained in this class, that is, the
+       * algorithms that modify the collection on which they operate, are specified
+       * to throw <tt>UnsupportedOperationException</tt> if the collection does not
+       * support the appropriate mutation primitive(s), such as the <tt>set</tt>
+       * method.  These algorithms may, but are not required to, throw this
+       * exception if an invocation would have no effect on the collection.  For
+       * example, invoking the <tt>sort</tt> method on an unmodifiable list that is
+       * already sorted may or may not throw <tt>UnsupportedOperationException</tt>.
+       *
+       * <p>This class is a member of the
+       * <a href="{@docRoot}/../technotes/guides/collections/index.html">
+       * Java Collections Framework</a>.
+       *
+       * @author  Mahbubur Rahman       * 
+       * @see     Collection
+       * @see     Set
+       * @see     List
+       * @see     Map
+       * @since   1.2
+       */

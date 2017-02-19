@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+ xmlns:android="http://schemas.android.com/apk/res/android"
+ android:layout_width="match_parent" android:layout_height="match_parent"
+ android:orientation="vertical">
+ 
+ <TextView
+     android:id="@+id/tvmed_hist_header"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:gravity="center_horizontal"
+     android:layout_alignParentLeft="true"
+     android:layout_margin="5dp"
+     android:padding="5dp"
+     android:text="@string/medication_data"
+     android:textAppearance="?android:attr/textAppearanceMedium"
+     android:textStyle="bold" />
+ 
+ <ExpandableListView android:id="@+id/myList"
+  android:layout_width="match_parent" 
+  android:layout_height="fill_parent"
+  android:layout_below="@id/tvmed_hist_header" />
+ 
+</RelativeLayout>

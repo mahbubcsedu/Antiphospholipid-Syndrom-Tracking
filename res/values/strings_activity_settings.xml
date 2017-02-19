@@ -1,0 +1,64 @@
+<resources>
+
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Strings related to Settings -->
+
+
+    <!-- Example General settings -->
+     <string name="pref_title_track_consent">Do you agree to participate in our local mobility study?</string>
+
+
+
+    <!-- Example settings for Data & Sync -->
+ 
+    <!-- Example settings for Notifications -->
+    <string-array name="pref_question_list1_titles">
+        <item>In what city or town was your first job?</item>
+        <item>What is the country of your ultimate dream vacation?</item>
+        <item>What year did you graduate from High School?</item>
+    </string-array>
+    <string-array name="pref_question_list1_values">
+        <item>01</item>
+        <item>02</item>
+        <item>03</item>
+    </string-array>
+    <string-array name="pref_question_list2_titles">
+        <item>In what city and country do you want to retire?</item>
+        <item>What was your dream job as a child?</item>
+        <item>Where did you vacation last year?</item>
+    </string-array>
+    <string-array name="pref_question_list2_values">
+        <item>04</item>
+        <item>05</item>
+        <item>06</item>
+    </string-array>
+    <string name="pref_subject_id">Participant ID</string>
+    <string name="pref_enrollment_code">Enrollment code</string>
+    <string name="pref_issue_date">Device date of issue</string>
+    <string-array name="pref_incentive_titles">
+        <item >$10</item>
+        <item >$15</item>
+        <item >$20</item>
+        <item >$25</item>
+        <item >All</item>
+    </string-array>
+    <string-array name="pref_incentive_values">
+        <item >10</item>
+        <item >15</item>
+        <item >20</item>
+        <item >25</item>
+        <item >All</item>
+    </string-array>
+    <string name="pref_incentive">Incentive threshold</string>
+    <string name="pref_alarm_morning">Morning notification time</string>
+    <string name="pref_alarm_evening">Evening notification time</string>
+    <string-array name="pref_consent_titles">
+        <item >Yes</item>
+        <item >No</item>
+    </string-array>
+    <string-array name="pref_consent_values">
+        <item >Yes</item>
+        <item >No</item>
+    </string-array>    
+</resources>

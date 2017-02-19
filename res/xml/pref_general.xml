@@ -1,0 +1,79 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:title="Settings">
+
+    <PasswordEditTextPreference
+        android:inputType="numberPassword"
+        android:key="pref_pin"
+        android:title="@string/prompt_password" />
+
+    <PreferenceScreen
+        android:key="pref_questions"
+        android:title="@string/title_activity_security_questions" >
+        <ListPreference
+            android:defaultValue="-1"
+            android:entries="@array/pref_question_list1_titles"
+            android:entryValues="@array/pref_question_list1_values"
+            android:key="question_list1"
+            android:negativeButtonText="@null"
+            android:positiveButtonText="@null"
+            android:title="@string/prompt_question1" />
+
+        <PasswordEditTextPreference
+            android:inputType="textPassword"
+            android:key="pref_response1"
+            android:title="@string/response_term" />
+
+        <ListPreference
+            android:defaultValue="-1"
+            android:entries="@array/pref_question_list2_titles"
+            android:entryValues="@array/pref_question_list2_values"
+            android:key="question_list2"
+            android:negativeButtonText="@null"
+            android:positiveButtonText="@null"
+            android:title="@string/prompt_question2" />
+
+        <PasswordEditTextPreference
+            android:inputType="textPassword"
+            android:key="pref_response2"
+            android:title="@string/response_term" />
+    </PreferenceScreen>
+
+    <!--
+    <EditTextPreference
+        android:inputType="time"
+        android:key="alarm_morning"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="@string/pref_alarm_morning" />
+    <EditTextPreference
+        android:inputType="time"
+        android:key="alarm_evening"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="@string/pref_alarm_evening" />
+    -->
+
+    <android.preference.TimePickerPreference
+        android:defaultValue="08:00"
+        android:key="@string/am_alarm_time"
+        android:summary="Set your desired time for morning alarm"
+        android:title="Morning notification time" />
+    <android.preference.TimePickerPreference
+        android:defaultValue="16:00"
+        android:key="@string/pm_alarm_time"
+        android:summary="Set your desired time for evening alarm"
+        android:title="Evening notification time" />
+
+    <ListPreference
+        android:defaultValue="-1"
+        android:entries="@array/pref_consent_titles"
+        android:entryValues="@array/pref_consent_values"
+        android:key="@string/spref_pref_consent"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null"        
+        android:title="@string/spref_consent_title"
+        android:summary="@string/spref_consent_summary" />
+
+</PreferenceScreen>

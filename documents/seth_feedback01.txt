@@ -1,0 +1,32 @@
+First feedback:
+
+1. Remove device access code
+2. Change add medication icon to text
+3. If going home or just pass the diary to background, while return, return to PIN ---done
+4. Frequency should not be number but will be string ( 1 will be replaced by 1 x/day or 1x/per week)
+5. Edit button for medication.
+6. " Taken" title be added to the top of checkbox for selecting medication
+7. Go to medication display below question yes or no
+8. If yes selected, still need to take auto forward to medication section
+9. If no selected, should promt for deleting existing list (text from seth)
+10. Change time from 24 h to am/pm if timepick up--done
+11. Parent child relation, if yes pressed and add input to child and then press no, then remove the data when no is selected.--done
+
+
+second feedback:
+
+1. time duration display---modify it from 1:40 format to 1hrs 4mins format---done
+2. QCR---2D bar code reader integration- extended part
+3. nitro last access time will update if nitroxide value is entered----done
+4. location update should be fine location and should set to min distance and shortest time---min distance 1 m and time 1500 ms. this can be changed anytime
+5. Message of notification will be generic " Please fill your diary today"--done.
+6. onRestarted to PINactivity for all the pages--done
+7. Mokimanage followMe---added but need to understand and test
+8. Color theme -- like all the fields are one color initially, but after filled up will changed to different color so the user can know which field is still blank
+9. Location distance should not be calculated--done
+10.GPS fine location will be recorded to phone but while transfer should remove precision point so that no one know exact location of user. This 
+is important for security and privacy for users.---recording has not been changed, later the sync process may be changed to meet the requirments
+11. Sound should be enabled for all notification.--done
+12. Tapped to notification should not have any direction. It will only be a message and snooz can be added for repeated sound.--done
+13. Enrollment code should be removed from the settings---done
+14. Tracking icon should not be displayed in the notification ,but should be displayed as icon just like the system icon of GPS.--nothing to change

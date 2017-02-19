@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="title_activity_medication">Medication</string>
+    <string name="title_medication_list">Medications</string>
+    <string name="title_medication_detail">Medication Detail</string>
+    <string name="lblmedDosage">Dosage</string>
+    <string name="lblmedmedicationname">Medication</string>
+    <string name="lblmedfreq">Frequency</string>
+    <string name="cbmed_title">Taken</string>
+    <string name="lblmedicationname">Medication</string>
+    <string name="btnmed_title">Submit</string>
+    <string name="btnmed_update_title">Update</string>
+    <string name="btnmed_delete">Remove</string>
+    <string name="btnmed_add">Add</string>
+    <string name="tvmedlabel_listheaer">Medication</string>
+    <string name="btn_med_send">Send</string>
+    <string name="tvmedilist_dosagehint">Dosage:</string>
+    <string name="tvmedlist_freqhit">Frequency:</string>
+    <string name="action_delete">Add</string>
+    <string name="action_add">Remove</string>
+    <string name="medication_data">My Medication History</string>
+    <string name="tvsuppliment_header">Daily Suppliment History</string>
+    <string name="tvsupplimentlistheader">Daily Suppliment</string>
+    <string name="suppliment_title">Suppliment</string>
+    <string name="med_list_header">Medication Diary</string>  
+</resources>

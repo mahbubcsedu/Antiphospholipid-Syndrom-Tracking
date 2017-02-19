@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/DD_main_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/activity_horizontal_margin" >
+
+        <LinearLayout
+            android:id="@+id/diaryLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/etnitro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="2014-07-28 13:58:10" >
+
+                <requestFocus />
+            </EditText>
+
+            <Button
+                android:id="@+id/btnnitro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nitro last access time" />
+
+            <EditText
+                android:id="@+id/etam"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="2014-07-28 13:58:10" >
+            </EditText>
+
+            <Button
+                android:id="@+id/btnam"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="AM Peak flow last access time" />
+
+            <EditText
+                android:id="@+id/etpm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="2014-07-28 13:58:10" >
+            </EditText>
+
+            <Button
+                android:id="@+id/btnpm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="PM Peak flow last access time" />
+
+            <EditText
+                android:id="@+id/etd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="2014-07-28 13:58:10" >
+
+                <requestFocus />
+            </EditText>
+
+            <Button
+                android:id="@+id/btnd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="DiaryLastAccessTime" />
+
+            <EditText
+                android:id="@+id/startdiary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="10:00" />
+
+            <EditText
+                android:id="@+id/enddiary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="12:00" />
+
+            <Button
+                android:id="@+id/diarywindow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="diary window set" />
+
+            <EditText
+                android:id="@+id/startam"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="10:00" />
+
+            <EditText
+                android:id="@+id/endam"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="12:00" />
+
+            <Button
+                android:id="@+id/amwindow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="am peak window set" />
+
+            <EditText
+                android:id="@+id/startpm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="16:00" />
+
+            <EditText
+                android:id="@+id/endpm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="18:00" />
+
+            <Button
+                android:id="@+id/pmwindow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="pm peak window set" />
+
+            <EditText
+                android:id="@+id/startnitro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="16:00" />
+
+            <EditText
+                android:id="@+id/endnitro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="18:00" />
+
+            <Button
+                android:id="@+id/nitrowindow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="nitro window set" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

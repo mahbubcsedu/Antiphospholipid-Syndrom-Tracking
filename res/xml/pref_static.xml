@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <EditTextPreference
+        android:capitalize="words"
+        android:inputType="textCapWords"
+        android:key="subject_id"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="@string/pref_subject_id" />
+     <EditTextPreference
+        android:capitalize="words"
+        android:inputType="textCapWords"
+        android:key="enrollment_code"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="@string/pref_enrollment_code" /> 
+
+    <!--
+        <EditTextPreference
+        android:inputType="datetime"
+        android:key="@string/device_date_issue"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="@string/pref_issue_date" />
+    -->
+    <android.preference.DatePickerPreference
+        android:defaultValue="2014.06.23"
+        android:endYear="2100"
+        android:key="@string/device_date_issue"
+        android:persistent="true"
+        android:startYear="2014"
+        android:title="Device Date Issue" />
+
+    <ListPreference
+        android:defaultValue="-1"
+        android:entries="@array/pref_incentive_titles"
+        android:entryValues="@array/pref_incentive_values"
+        android:key="incentive"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null"
+        android:title="@string/pref_incentive" />
+
+    <Preference
+        android:key="settings_continue"
+        android:layout="@layout/settings_continue" >
+    </Preference>
+
+</PreferenceScreen>

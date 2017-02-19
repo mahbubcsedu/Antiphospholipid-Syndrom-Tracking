@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="am_alarm_time">am_notification_time</string>
+    <string name="pm_alarm_time">pm_notification_time</string>
+    <string name="device_date_issue">device_date_issue</string>
+    <string name="spref_subject_id">subject_id</string>
+    <string name="spref_enrollment_code">enrollment_code</string>
+    <string name="spref_incentive">incentive</string>
+    <string name="spref_question_list1">question_list1</string>
+    <string name="spref_question_list2">question_list2</string>
+    <string name="spref_settings_continue">settings_continue</string>
+    <string name="spref_pref_consent">pref_consent</string>
+    <string name="spref_pref_pin">pref_pin</string>
+    <string name="spref_pref_pin_encrypted">pref_pin_encrypted</string>
+    <string name="spref_consent_title">Mobility participation</string>
+    <string name="spref_consent_summary">Give your consent if you want to participate mobility research</string>
+    <string name="spref_is_application_background">is_application_background</string>
+    
+
+</resources>
