@@ -2,67 +2,67 @@
 
 ### Table of Contents
 
-1 Introduction 5
+###  Introduction 
 
-1.1 Purpose 5
+* 1.1 Purpose 
 
-1.2 Scope 5
+* 1.2 Scope 
 
-1.3 Definitions, Acronyms, and Abbreviations 5
+* 1.3 Definitions, Acronyms, and Abbreviations 
 
-1.4 References 5
+* 1.4 References 
 
-1.5 Overview 5
+* 1.5 Overview 
 
-2 System Overview 6
+## 2 System Overview 
 
-3 Design Considerations 7
+### 3 Design Considerations 
 
-3.1 Assumptions and Dependencies 7
+* 3.1 Assumptions and Dependencies 
 
-3.2 Constraints 7
+* 3.2 Constraints 
 
-4 APS application 8
+### 4 APS application 
 
-4.1 Starting application 8
+* 4.1 Starting application 
 
-4.2 First time settings 8
+* 4.2 First time settings 
 
-4.3 Settings any time 9
+* 4.3 Settings any time 
 
-4.4 Log in to diary 11
+* 4.4 Log in to diary 
 
-4.5 PIN Recovery activity 13
+* 4.5 PIN Recovery activity 
 
-4.6 Diary activity 13
+* 4.6 Diary activity 
 
-4.6.1 Peak flow 13
+* 4.6.1 Peak flow 
 
-4.6.2 Symptoms 14
+* 4.6.2 Symptoms 
 
-4.6.3 Daily activities 14
+* 4.6.3 Daily activities 
 
-4.6.4 Nitroxide measurement 16
+* 4.6.4 Nitroxide measurement 
 
-4.6.5 Saving diary information 16
+* 4.6.5 Saving diary information 
 
-4.7 Peak flow activity 17
+* 4.7 Peak flow activity 
 
-4.8 Medication List activity 18
+* 4.8 Medication List activity 
 
-4.9 Medication detail activity 20
+* 4.9 Medication detail activity 
 
-4.10 Supplement List activity 21
+* 4.10 Supplement List activity 
 
-4.11 Supplement detail activity 21
+* 4.11 Supplement detail activity 
 
-4.12 Location recording service 21
+* 4.12 Location recording service 
 
-4.13 Notification system 22
+* 4.13 Notification system 
 
-4.14 Data sync service 23
+* 4.14 Data sync service 
 
-5 Conclusion 24
+### 5 Conclusion 
 
 APS user document
 
