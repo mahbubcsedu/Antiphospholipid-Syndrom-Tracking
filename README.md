@@ -4,7 +4,7 @@
 
 ###  Introduction 
 
-* 1.1 Purpose 
+* [1.1 Purpose](#purpose) 
 
 * 1.2 Scope 
 
@@ -69,7 +69,7 @@ APS user document
 1Introduction
 This is user guide for the EMMES APS android application. This is preliminary guide based on the application which is developed at summer 2014
 
-1.1Purpose
+<a name="purpose"></a> 1.1 Purpose
 The user guide of APS mobile application is for to make ease of use of this application by the user and also help the future developer to upgrade this to solve some other requirement that was not completed or those are not addressed by the time while the document was written and application was deployed.
 
 1.2Scope
