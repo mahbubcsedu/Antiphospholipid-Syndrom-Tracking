@@ -105,95 +105,68 @@ After installing the apk to the system, the user will get to see the icon captio
 
 
 ### Splash screen
-[alt-text](https://github.com/mahbubcsedu/Antiphospholipid-Syndrom-Tracking/blob/master/docimages/2.png "Splash Screen")
+![Splash screen](https://github.com/mahbubcsedu/Antiphospholipid-Syndrom-Tracking/blob/master/docimages/2.png "Splash Screen")
 
 
 ### 4.2 First time settings
 If the application starts for the first time, then this will directly moved to the settings page. The settings page contains PIN setup, security question setup, participation id, enrollment code and device data issue which are supposed to fill up first time application running. But PIN setup is mandatory. PIN length should be four and only digit. After completing settings, the user can tap complete button which will take her to the log in page.
 
-|
+![settings view](https://github.com/mahbubcsedu/Antiphospholipid-Syndrom-Tracking/blob/master/docimages/3.png "Splash Screen") |
+![First time PIN](https://github.com/mahbubcsedu/Antiphospholipid-Syndrom-Tracking/blob/master/docimages/4.png "Splash Screen") b)PIN entering dialog
 
-
-a)Settings view
-|
-
-
-b)PIN entering dialog
-|
-| --- | --- |
-
-Fig. Settings for first time
 
 ### 4.3 Settings any time
 After first setup, the user will get the access to diary and they can set all the diary related settings at their own will. They can do it while the app is first started or they can do it later some time. The setting options are listed as follows:
 
-a)Morning notification time
-b)Evening notification time
-c)Mobility participation ( They will get notified later though)
-d)Incentive threshold
-e)Device date issue
-f)Security questions
-|
-
+* a)Morning notification time
+* b)Evening notification time
+* c)Mobility participation ( They will get notified later though)
+* d)Incentive threshold
+* e)Device date issue
+* f)Security questions
 
 a)Device date issue settings
 |
-
+![settings view](https://github.com/mahbubcsedu/Antiphospholipid-Syndrom-Tracking/blob/master/docimages/5.png "Splash Screen") |
+![First time PIN](https://github.com/mahbubcsedu/Antiphospholipid-Syndrom-Tracking/blob/master/docimages/6.png "Splash Screen") 
 
 b)Incentive settings
-| |
-| --- | --- | --- |
-|
 
 
 c)Evening notification time selection
-|
 
 
+![settings view](https://github.com/mahbubcsedu/Antiphospholipid-Syndrom-Tracking/blob/master/docimages/7.png "Splash Screen") |
+![First time PIN](https://github.com/mahbubcsedu/Antiphospholipid-Syndrom-Tracking/blob/master/docimages/8.png "Splash Screen") 
 d)Morning notification time selection
-| |
-|
+
 
 
 e)Security question settings
-|
 
 
+![settings view](https://github.com/mahbubcsedu/Antiphospholipid-Syndrom-Tracking/blob/master/docimages/9.png "Splash Screen") |
+![First time PIN](https://github.com/mahbubcsedu/Antiphospholipid-Syndrom-Tracking/blob/master/docimages/10.png "Splash Screen") 
 f)Security question answer setup
-| |
-|
+
 
 
 g)Mobility participation consent
 |
-
+![First time PIN](https://github.com/mahbubcsedu/Antiphospholipid-Syndrom-Tracking/blob/master/docimages/11.png "Splash Screen")
 Fig. Different available settings
 
 ### 4.4 Log in to diary
 If the application is not starting for the first time, then some settings are already done, at least there is a PIN number of the user. If the user now opens the application, she will directly see PIN entering page for log in to the diary system. There is only one text input box with log in button. If the user forgets the PIN number, she can look at the top corner action bar. If tapped, the menu with " Forget PIN" will open. The user can tap the menu item, to navigate to the PIN recovering page.
-
-|
-
-
-a)Log in
-|
+![First time PIN](https://github.com/mahbubcsedu/Antiphospholipid-Syndrom-Tracking/blob/master/docimages/12.png "Splash Screen")|
+![First time PIN](https://github.com/mahbubcsedu/Antiphospholipid-Syndrom-Tracking/blob/master/docimages/13.png "Splash Screen")| ![First time PIN](https://github.com/mahbubcsedu/Antiphospholipid-Syndrom-Tracking/blob/master/docimages/14.png "Splash Screen")
 
 
-b)Entering PIN
-|
-| --- | --- |
-|
-
-
-c)Forget PIN option
-|
-
-Fig. Login Screen
 
 ### 4.5 PIN Recovery activity
 While the user set their preferences, they will get the chance to select their two security questions with the answers provide. If they forget the PIN and tap the Forget PIN from the PIN activity, they will be directed to PIN recovery page. The page contains two security questions answering field. The user has to provide the answers which will take them to the settings. While in settings, the user will be able to change the PIN.
 
-
+![First time PIN](https://github.com/mahbubcsedu/Antiphospholipid-Syndrom-Tracking/blob/master/docimages/15.png "Splash Screen")
 
 Fig. PIN Recovery
 
@@ -207,7 +180,7 @@ Peak flow information is collected in a separate activity but has only the link 
 These are different symptoms the user faces at their daily life. These questions are mainly yes and no question selection. But two different types of information are needed here. One is the prescribed medication information and supplement information. These are also yes and no question. If user does not take any medication or supplement, there is nothing to do. But if they select yes, then the diary page will take them to the medication activity. We will discuss the medication activity later in this document.
 
 |
-
+![First time PIN](https://github.com/mahbubcsedu/Antiphospholipid-Syndrom-Tracking/blob/master/docimages/16.png "Splash Screen")
 
 |
 | --- |
@@ -225,9 +198,8 @@ Daily activities question has some different view in selection. Some questions a
 
 |
 
-
-|
-| --- |
+![First time PIN](https://github.com/mahbubcsedu/Antiphospholipid-Syndrom-Tracking/blob/master/docimages/17.png "Splash Screen")
+|![First time PIN](https://github.com/mahbubcsedu/Antiphospholipid-Syndrom-Tracking/blob/master/docimages/18.png "Splash Screen")
 | Fig. Duration selection dialog |
 
 ### 4.6.4 Nitroxide measurement
@@ -237,23 +209,23 @@ This is not supposed to enter daily but will be defined by the doctors or survey
 The diary page information will be saved whatever the user entered each time they left the diary page. They will have the option to enter the information all they day if information is solely related to diary. Some information like peak flow and nitro have their own time window and the user has to be entered those within that time range. If the day passed, the diary information will be stored finally and if user login next day, they will see new diary with all blank. They also can complete the diary explicitly by tapping the submit button. If so, all diary information will be stored to the database and all diary related information will be out of display. But the user will get the chance to enter peak flow as this is separate and it depends on time window. If all information including peak flow are entered and submitted, the user will see thank you message. If they login that day again, they will see same message.
 
 
-
+![First time PIN](https://github.com/mahbubcsedu/Antiphospholipid-Syndrom-Tracking/blob/master/docimages/19.png "Splash Screen")
 Fig. Thank you message after completing diary
 
 ### 4.7 Peak flow activity
 For entering peak flow measurement, the user can tap peak flow button from diary page which will navigate her to peak flow activity. Peak flow activity has three numeric measurement fields. The user has to fill up two peak flow a day, one is called here AM Peak Flow or morning peak and another one is PM peak flow or evening peak flow. Based on the time, one the mobile device, the peak flow button will guide them to morning or evening peak flow. The user supposed to enter one peak flow measurement to the first field and have to wait few seconds or minutes before entering second one. Tapping add button right to the field will display progress for certain amount of time and the next field will appear.
 
 |
-
+![First time PIN](https://github.com/mahbubcsedu/Antiphospholipid-Syndrom-Tracking/blob/master/docimages/20.png "Splash Screen")
 
 a)General peak flow view
 |
-
+![First time PIN](https://github.com/mahbubcsedu/Antiphospholipid-Syndrom-Tracking/blob/master/docimages/21.png "Splash Screen")
 
 b)Next peak flow waiting progress
-|
+|![First time PIN](https://github.com/mahbubcsedu/Antiphospholipid-Syndrom-Tracking/blob/master/docimages/22.png "Splash Screen")
 | --- | --- |
-
+![First time PIN](https://github.com/mahbubcsedu/Antiphospholipid-Syndrom-Tracking/blob/master/docimages/23.png "Splash Screen")
 Fig. Peak flow activity view
 
 The user can come to peak flow activity anytime and can leave. They can field up one and can leave. Again when they come back they will see the previous entered field and can enter the next one. They will get the option until all three fields are field up. If they fill up all three fields, the peak flow button will be disappearing from the diary page and they will not get any chance to change or fill again.
@@ -266,22 +238,22 @@ If they select only one from the list, they will see at action bar or status bar
 If user previously select at least one item and come back again, they will see the item selected. If they want to add new item now, first user need to deselect the item/s from the list. Then the ADD button will appear.
 
 |
-
+![First time PIN](https://github.com/mahbubcsedu/Antiphospholipid-Syndrom-Tracking/blob/master/docimages/24.png "Splash Screen")
 
 a)List before selecting any item
 |
 | --- |
 |
 
-
+![First time PIN](https://github.com/mahbubcsedu/Antiphospholipid-Syndrom-Tracking/blob/master/docimages/25.png "Splash Screen")
 b)After selecting only one item
 |
 |
 
-
+![First time PIN](https://github.com/mahbubcsedu/Antiphospholipid-Syndrom-Tracking/blob/master/docimages/26.png "Splash Screen")
 c)After seleting two or more items
 |
-
+![First time PIN](https://github.com/mahbubcsedu/Antiphospholipid-Syndrom-Tracking/blob/master/docimages/27.png "Splash Screen")
 Fig. Medication list activity view
 
 ### 4.9 Medication detail activity
@@ -289,13 +261,13 @@ Medication detail activity is for adding new medication with detail information.
 
 |
 
-
+![First time PIN](https://github.com/mahbubcsedu/Antiphospholipid-Syndrom-Tracking/blob/master/docimages/28.png "Splash Screen")
 a)Add medication view
 |
 | --- |
 |
 
-
+![First time PIN](https://github.com/mahbubcsedu/Antiphospholipid-Syndrom-Tracking/blob/master/docimages/29.png "Splash Screen")
 b)Edit medication view
 |
 
