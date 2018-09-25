@@ -112,7 +112,7 @@ After installing the apk to the system, the user will get to see the icon captio
 ### 4.2 First time settings
 If the application starts for the first time, then this will directly moved to the settings page. The settings page contains PIN setup, security question setup, participation id, enrollment code and device data issue which are supposed to fill up first time application running. But PIN setup is mandatory. PIN length should be four and only digit. After completing settings, the user can tap complete button which will take her to the log in page.
 
-<img src="https://github.com/mahbubcsedu/Antiphospholipid-Syndrom-Tracking/blob/master/docimages/3.png" width="200" alt-text="Settings view">
+<img src="https://github.com/mahbubcsedu/Antiphospholipid-Syndrom-Tracking/blob/master/docimages/3.png" width="200" alt-text="Settings view"> |
 <img src="https://github.com/mahbubcsedu/Antiphospholipid-Syndrom-Tracking/blob/master/docimages/4.png" width="200" alt-text="Settings view">
 ### b)PIN entering dialog
 
